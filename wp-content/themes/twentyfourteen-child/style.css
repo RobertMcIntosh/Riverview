@@ -1,0 +1,1476 @@
+<style type="css">
+/*
+ Theme Name:   Twenty Fourteen Child
+ Theme URI:    http:
+ Description:  Twenty Fourteen Child Theme
+ Author:       Robert McIntosh
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+@import url("../twentyfourteen/style.css");
+/*
+	brand colors:
+	yellow: 232, 185, 9
+	light yellow: 248, 233, 184
+	red: 158, 3, 42
+	blue: 0, 103, 172
+	pink: 251, 201, 188
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,
+header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size:12pt;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section
+{
+	display: block;
+}
+
+blockquote,q
+{
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Hand cursor on clickable input elements */
+label,input[type="button"],
+input[type="submit"],
+input[type="image"],button
+{
+	cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,input,select,textarea
+{
+	margin: 0;
+}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover,a:active
+{
+	outline: none;
+}
+
+.archive-header,.comments-area,.image-navigation,.page-header,
+.page-content,.post-navigation,.site-content .entry-header,
+.site-content .entry-content,.site-content .entry-summary,
+.site-content footer.entry-meta
+{
+	padding-left: 0 !important;
+}
+
+/*_____________________________________________*/
+@font-face
+{
+	font-family: 'gillsans_lightregular';
+	src: url('../../uploads/fonts/gillsans_light-webfont-webfont.eot');
+	src: url('../../uploads/fonts/gillsans_light-webfont-webfont.eot?#iefix') 					 format('embedded-opentype'),
+			 url('../../uploads/fonts/gillsans_light-webfont-webfont.woff') format('woff'),
+			 url('../../uploads/fonts/gillsans_light-webfont-webfont.ttf') format('truetype'),	 url('../../uploads/fonts/gillsans_light-webfont-webfont.svg#gillsans_lightregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html
+{
+	min-width: 600px;
+}
+
+body
+{
+	margin:0;
+	font-family: 'gillsans_lightregular';
+}
+
+#infinite-view-1
+{
+	display:none !important;
+}
+.menu-toggle, .search-form
+{
+	display: none !important;
+}
+
+.site-title,.search-box,.menu-toggle,.screen-reader-text.skip-link
+{
+	display: none !important;
+}
+
+#infinite-footer
+{
+	display: none;
+}
+
+/*center site*/
+.site
+{
+	width:100%;
+	max-width: 100% !important;
+	margin: auto;
+}
+
+.site-header
+{
+	width:100%;
+	max-width:100% !important;
+	min-width:600px;
+	top: 0;
+	z-index: 500;
+}
+
+/*hide search, footer ad*/
+.search-toggle,.site-info a
+{
+	display: none;
+}
+
+/*top gallery*/
+#site-header
+{
+	margin-top: 100px;
+}
+
+#site-header img
+{
+	width: 100%;
+}
+
+.clearfix
+{
+	clear:both;
+}
+
+/*navigation*/
+.header-main
+{
+	max-width:1445px;
+	margin:0 auto;
+}
+
+.menu-main-menu-container
+{
+	height: 44px;
+}
+
+.primary-navigation
+{
+	position: fixed;
+	height: 44px;
+	width:100%;
+	max-width: 1445px !important;
+	min-width: 600px;
+	float:none !important;
+	text-align: center;
+	font-size: 1.6em;
+	margin:0 !important;
+	margin-top:25px !important;
+	-webkit-transition: margin-top .5s ease-in-out;
+ 	   -moz-transition: margin-top .5s ease-in-out;
+   		 -o-transition: margin-top .5s ease-in-out;
+    			transition: margin-top .5s ease-in-out;
+  background: rgba(0,0,0, .5);
+  font-family: 'gillsans_lightregular';
+  z-index: 1000;
+}
+
+.transparent
+{
+	background:rgba(255,255,255, 0.9);
+	-webkit-transition: background .5s ease-in-out;
+ 	   -moz-transition: background .5s ease-in-out;
+   		 -o-transition: background .5s ease-in-out;
+    			transition: background .5s ease-in-out;
+	margin-top: 0px !important;
+	-webkit-transition: margin-top .5s ease-in-out;
+ 	   -moz-transition: margin-top .5s ease-in-out;
+   		 -o-transition: margin-top .5s ease-in-out;
+    			transition: margin-top .5s ease-in-out;
+	box-shadow: 0px 1px 10px #888888;
+}
+
+.primary-navigation  ul
+{
+	margin-top: 0;
+	padding-left: 0 !important;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.primary-navigation  li
+{
+	display: inline-block;
+	height: 40px;
+	margin: 0;
+	padding:0;
+}
+
+.primary-navigation ul li a:link
+{
+	display:block;
+	padding: 6px 15px 7px !important;
+	text-decoration: none;
+	color: white;
+}
+
+.dark
+{
+	color: black !important;
+}
+
+.primary-navigation ul li a:visited
+{
+	color: white;
+}
+
+.primary-navigation ul li a:hover{}
+
+.primary-navigation ul li a:focus,
+.primary-navigation ul li a:active
+{
+	color: rgb(158,3,42) !important;
+	background-color:rgb(0,0,0);
+}
+
+.dark:link{}
+
+.dark:visited{}
+
+.dark:hover{}
+
+.dark:focus,
+.dark:active
+{
+	color: rgb(158,3,42) !important;
+}
+
+.active
+{
+	color: rgb(158,3,42) !important;
+	background-color:rgb(0,0,0);
+}
+
+
+article
+{
+	width: 100%;
+}
+
+/*move post left*/
+.hentry
+{
+	max-width: 1445px !important;
+	margin: 0 auto;
+}
+
+#post-183
+{
+	margin-top: 0;
+	background: url('../../uploads/2014/08/RvBanner1440_2.jpg');
+	background-repeat: no-repeat;
+	background-position:50% 0;
+}
+
+#post-183 .entry-content
+{
+	width: 100%;
+}
+
+#post-10
+{
+	margin-top: 0;
+	background: url('../../uploads/2014/08/homeBkgrnd1440_2.jpg');
+	background-repeat: no-repeat;
+	background-position:50% 0;
+	background-size:100% 100%;
+}
+
+#post-10 .entry-content
+{
+	background-color: rgba(0,0,0, .5);
+}
+
+#post-13
+{
+	background:url('../../uploads/2014/06/canvasTexture.jpg')repeat !important;
+}
+
+#post-13 .entry-content
+{
+	background-color:rgba(232, 185, 9, 0.1) !important;
+}
+
+#post-18 .entry-content
+{
+	background: url('../../uploads/2014/06/noiseTexture.png')repeat !important;
+	background-color: rgb(248, 233, 184)!important;
+	box-shadow: 0px 6px 5px rgb(90, 90, 90) inset;
+}
+
+#post-22, #post-15
+{
+	background: url('../../uploads/2014/06/canvasTexture.jpg')repeat;
+	box-shadow: 0px 6px 5px #888888 inset;
+}
+
+#post-22 .entry-content, #post-15 .entry-content
+{
+	width: 100%;
+	padding:5% 0%;
+	background-color: rgba(3, 73, 112, .6)!important;
+}
+
+#post-15 .entry-content
+{
+	padding:2% 0%;
+}
+
+#post-341 .entry-content
+{
+	background: url('../../uploads/2014/06/canvasTexture.jpg')repeat;
+	background-color: black;
+}
+
+#primary
+{
+	position:relative;
+	width: 100%;
+	min-width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top:0;
+}
+
+/*formate post to left and half pg*/
+.site-content
+{
+	width: 100%;
+}
+
+.site-content .entry-header
+{
+	display: none;
+}
+
+.site-content .entry-content
+{
+	max-width: 1450px !important;
+	min-width: 600px;
+}
+
+.site-content .hentry
+{
+	border-top:none !important;
+}
+
+aside
+{
+	display: inline-block;
+}
+
+.widget h1,.widget h2,.widget h3,
+.widget h4,.widget h5,.widget h6
+{
+	margin: 0px;
+}
+
+.widgets_on_page
+{
+	display: inline-block;
+}
+
+.widgets_on_page ul
+{
+	list-style: none outside none !important;
+	padding-left: 0 !important;
+}
+
+.entry-content
+{
+	width: 100%;
+	margin:0 auto;
+}
+
+#homePg
+{
+	margin: 0 auto;
+	padding:1% 8% 5% 8%;
+	color: white;
+	font-size:1.45em;
+	text-shadow: 2px 2px black;
+}
+
+#homePg p
+{
+	margin-top: 0;
+	font-weight: 700;
+}
+
+#homePg h3
+{
+	margin-bottom: 0;
+}
+
+#home ul
+{
+	margin:0;
+}
+
+#homePg a
+{
+	color: rgb(248, 233, 184);
+}
+
+/*hm pg widget*/
+#text-4
+{
+	width: 80%;
+	margin-right: 0;
+}
+
+#menuPg
+{
+	width:25%;
+	padding-left: 4%;
+	float: left;
+}
+
+#menuPg h1, #menuPg h3, #menu h2
+{
+	margin-bottom:0;
+}
+
+#menuPg p, #menu p
+{
+	margin-top:0;
+	padding-left: 2%;
+}
+
+#menu
+{
+	width: 64%;
+	padding: 1% 1% 3% 3%;
+	float: right;
+	border-left: 1px dotted rgb(0, 103, 172);
+	font-size: 1.1em;
+	line-height: 1.7em;
+}
+
+#menu h2
+{
+	margin-bottom: 5px;
+	font-size:1.7em;
+	font-weight:500;
+	letter-spacing: 5px;
+	color:rgb(158, 3, 42);
+}
+
+#menu span
+{
+	margin-top: -15px;
+	display: inline-block;
+	font-size:1.35em;
+	font-weight:500;
+	color:rgb(0, 103, 172);
+}
+
+#map
+{
+	height:400px;
+}
+
+#home
+{
+	width:100%;
+}
+
+.mapDiv.gm-style, small
+{
+	display: none !important;
+}
+
+#hoursPhone
+{
+	color:white;
+	margin-top: 69px;
+	margin-bottom: .2%;
+	width: 250px;
+	height:600px;
+	padding: 0 0 0 1%;
+	float: right;
+	background-color:rgba(0,0,0,1);
+	font-size: 1.1em;
+}
+
+#hoursPhone div
+{
+	white-space:nowrap;
+}
+
+#hoursPhone p
+{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+#hoursPhone a
+{
+	display: inline-block;
+	width: 91%;
+	padding: 3px 7px;
+	color:white;
+}
+
+#hoursPhone a:link{}
+
+#hoursPhone a:visited{}
+
+#hoursPhone a:hover{}
+
+#hoursPhone a:focus,
+#hoursPhone a:active
+{
+	color:rgb(158, 3, 42);
+	background-color:white;
+}
+
+#winebarHours, #cafeHours
+{
+	margin-top: 10px;
+}
+
+#winebarHours span
+{
+	font-size: 1.1em;
+}
+
+#hoursPhone ul
+{
+	margin-top:0;
+	margin-left: 5px;
+	padding:0;
+}
+
+#hoursPhone ul li
+{
+	list-style: none outside none !important;
+	padding: .08em;
+}
+
+#hoursPhone h2, #hoursPhone h3
+{
+	margin: .1em;
+	margin-bottom: 0;
+	letter-spacing: 8px;
+}
+
+/*social media icons*/
+.synved-social-credit
+{
+	display:none !important;
+}
+
+#socialM
+{
+	margin-left:-60%;
+	margin-top:-35%;
+}
+
+.fb_iframe_widget
+{
+	margin-left: 2%;
+}
+
+div.sharedaddy h3.sd-title
+{
+	display:none !important;
+}
+
+#synved_social_follow-2 a
+{
+	margin-right:10px !important;
+	padding:0 !important;
+}
+
+#synved_social_follow-2 a:hover,
+#synved_social_follow-2 a:focus,
+#synved_social_follow-2 a:active
+{
+
+}
+
+/*home slideshow*/
+#menuSlideshow
+{
+	width:100%;
+	height:485px;
+	border-top:solid 3px black;
+}
+
+UL.acx_ppt.acx_ppt_0.acx_ppt_uid_all
+{
+	margin: 0 auto !important;
+}
+
+.acx_ppt li img
+{
+	max-width: 1425px;
+  height: auto !important;
+  box-shadow: 0px 5px 5px rgb(100, 100, 100);
+}
+
+#aboutPg
+{
+	color: rgb(245,245,245);
+	font-size:1.45em;
+	padding-top: 5%;
+	margin-top: -5%;
+}
+
+/*about pg slideshow*/
+#cafeSlide, #wineSlide
+{
+	width: 89%;
+	margin: 0 auto;
+	height: 235px;
+	background-color:white;
+	border: 3px solid white;
+}
+
+#aboutPg a
+{
+	display: inline-block;
+	padding: 2px 0;
+	color: rgb(235,235,235);
+	text-decoration:none;
+}
+
+#aboutPg a:visited{}
+
+#aboutPg a:hover{}
+
+#aboutPg a:focus,
+#aboutPg a:active
+{
+	color:rgb(158, 3, 42);
+	background-color:white;
+	text-shadow: none;
+}
+
+#aboutPg h1, #aboutPg h2
+{
+	width:100%;
+	text-align:center;
+	font-weight: 500;
+}
+
+#aboutCafe
+{
+	float: left;
+	width: 48%;
+	border-right: 1px dotted rgb(0,0,0);
+	padding-right: 2%;
+}
+
+#aboutCafe h2, #aboutWineBar h2
+{
+	margin-bottom: 0;
+	letter-spacing: 10px;
+	font-size: 1.7em;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+#cafeP, #aboutCafe h2
+{
+	width:100%;
+}
+
+
+#wineP, #aboutWineBar h2
+{
+	width:93%;
+	margin-left:5%;
+}
+
+#aboutPg span
+{
+	margin-bottom: 0;
+	margin-left: 1%;
+	margin-right: 1%;
+	letter-spacing: 10px;
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+#aboutCafe p
+{
+	width: 90%;
+	margin:0 auto;
+	margin-bottom: 2%;
+}
+
+#aboutWineBar p
+{
+	width: 90%;
+	margin:0 auto;
+	margin-bottom: 2%;
+}
+
+#aboutCafe #cafeP, #aboutWineBar #wineP
+{
+	margin-bottom:3%;
+	text-align: center;
+}
+
+#aboutWineBar
+{
+	float: right;
+	width: 48%;
+}
+
+#aboutBoth
+{
+	margin: 3% auto 5%;
+}
+
+#aboutBoth h3
+{
+	width: 100%;
+	display: inline-block;
+	text-align:center;
+}
+
+#aboutBoth p
+{
+	width: 80%;
+	margin: 2% auto;
+}
+
+#eventsPg
+{
+	width: 35%;
+	float: left;
+	margin: 5%;
+	margin-top: 0;
+	padding-top: 5%;
+	font-size: 1.25em;
+}
+
+#musicPg,#music
+{
+	width: 45%;
+	margin-top: 2%;
+	margin-left: 3%;
+	float: left;
+	font-size: 1.2em;
+}
+
+#music
+{
+	margin-top: 10px;
+}
+
+#musicPg h1
+{
+	margin-bottom:0;
+	font-size:1.75em;
+	font-weight:500;
+	letter-spacing: 3px;
+	color:rgb(158, 3, 42);
+}
+
+#musicPg h2
+{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size:1.35em;
+	font-weight:500;
+	color:rgb(0, 103, 172);
+}
+
+#musicPg p
+{
+	margin-top:0;
+}
+
+#pressPg
+{
+	margin-top: -5%;
+	margin-left: 2%;
+	padding-top:5%;
+	font-size: 2em;
+}
+
+/*press pg*/
+table
+{
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td
+{
+  padding: 6px;
+  text-align: left;
+  font-size: 1.2em;
+	font-weight: 500;
+	color:rgb(15, 15, 15);
+}
+
+tr
+{
+	border-top: 1px solid rgb(240, 240, 240);
+}
+
+td:first-child
+{
+	padding: 0;
+	padding-right:10px;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.1em;
+	color: rgb(158, 3, 42);
+}
+
+.tr2Row
+{
+	border:none;
+}
+
+table span
+{
+	display:block;
+	font-size:.55em;
+	font-weight:100;
+	color: rgb(50,50,50);
+}
+
+#calendar_1>table:nth-child(1)
+{
+	width: 600px !important;
+	height: 400px !important;
+}
+
+#calendar_1 table tr
+{
+	height: 80px;
+	background-color: rgb(245, 245, 245) !important;
+}
+
+/*top empty tr td on calendar*/
+#calendar_1>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1),
+#calendar_1>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)
+{
+	background-color: rgb(245, 245, 245) !important;
+}
+
+#calendar_1 .cala_arrow a
+{
+	font-size: 45px !important;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.calmonth_table>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>span:nth-child(2)
+{
+	font-size: 40px !important;
+}
+
+#bigcalendar1
+{
+	width: 45%;
+	float: right;
+	margin-top: 5%;
+	margin-right: 3%;
+}
+
+#bigcalendar1 .views
+{
+	width:10%;
+}
+
+#bigcalendar1 table span, #bigcalendar1 table p,
+#bigcalendar1 table tr, #bigcalendar1 table td,
+#bigcalendar1 .views span
+{
+	font-size:1.1em !important;
+	letter-spacing: normal;
+}
+
+#afterbig1
+{
+	width:98% !important;
+}
+
+#text-10
+{
+	width: 40%;
+	float: left;
+}
+
+#mailList
+{
+	width:40%;
+	margin:0% 1%;
+	margin-right: 5%;
+	float:right;
+	font-size:1.25em;
+}
+
+#mailList h1
+{
+	font-size:1.45em;
+	color: rgb(3, 73, 112);
+}
+
+.sml_namelabel, .sml_emaillabel
+{
+	font-size:1.2em;
+}
+
+.sml_nameinput,.sml_emailinput
+{
+	font-size:.8em;
+}
+
+INPUT.btn.sml_submitbtn
+{
+   background: rgb(3, 73, 112);
+   padding:1.5% 3% 1%;
+   -webkit-border-radius: 0px;
+  	  -moz-border-radius: 0px;
+   				 border-radius: 0px;
+   color: rgb(255,255,255);
+   font-family: 'gillsans_lightregular';
+   font-size:1em;
+   text-decoration: none;
+   vertical-align: middle;
+   border:none;
+}
+
+INPUT.btn.sml_submitbtn:hover
+{
+   background: rgb(28,113,156);
+   color: rgb(0,0,0);
+}
+
+INPUT.btn.sml_submitbtn:active
+{
+   background: #1b435e;
+}
+
+#footerPg
+{
+	padding:0px 19% 3%;
+	font-size: 1em;
+	border-top:solid 5px rgb(158, 3, 42) !important;
+	background:	url('../../uploads/2014/07/riverLogo.png')no-repeat;
+	background-color: rgba(232, 185, 9, 0.1);
+	background-position: 80% 40%;
+	background-size: 15%;
+}
+
+#footerPg #cafeHours, #footerPg #winebarHours,
+#footerNav
+{
+	margin:4% 5% 1% 1%;
+	float: left;
+}
+
+#footerPg h2
+{
+	margin-bottom:0;
+}
+
+#footerPg p
+{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#footerNav
+{
+	margin-top: 3%;
+	font-size:2.4em;
+}
+
+#footerNav a
+{
+	padding-left:10px;
+}
+
+#footerPg ul
+{
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0;
+}
+
+#footerPg #cafeHours a,
+#footerPg #winebarHours a
+{
+	margin-left: -5px;
+	padding:0 5px;
+}
+
+#footerPg a
+{
+	width: 100%;
+	display: inline-block;
+	color:black;
+	text-decoration:none;
+}
+
+#footerPg a:link{}
+
+#footerPg a:visited{}
+
+#footerPg a:hover{}
+
+#footerPg a:focus,
+#footerPg a:active
+{
+	color: #9E032A;
+	background-color:rgb(0,0,0);
+}
+
+#contact-form-341
+{
+	margin-top:3%;
+}
+
+.sml_namelabel
+{
+	padding-right: 10px;
+	cursor:default;
+}
+
+.sml_emaillabel
+{
+	padding-right: 16px;
+	cursor:default;
+}
+
+/*__________________________media queires_____________________________*/
+/*slideshows is a none responsive plugin*/
+@media only screen and
+	(max-width: 1330px),
+	(max-device-width: 1330px)
+{
+	#menuSlideshow
+	{
+		height: 445px;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 223px;
+  }
+}
+
+@media only screen and
+	(max-width: 1260px),
+	(max-device-width: 1260px)
+{
+	#menuSlideshow
+	{
+		height: 420px;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 212px;
+  }
+
+	#footerPg
+	{
+    padding: 0px 15% 3%;
+	}
+}
+
+@media only screen and (max-width: 1200px),
+	(max-device-width: 1200px),
+	(orientation:portrait)
+{
+	#menuSlideshow
+	{
+		height: 400px;
+	}
+
+	#post-183
+	{
+		background: url('../../uploads/2014/08/RvBanner1200_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+	}
+
+	#post-10
+	{
+		background: url('../../uploads/2014/08/homeBkgrnd1200_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+		background-size:100% 100%;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 195px;
+  }
+
+	#footerPg
+	{
+		background-position: 85% 40%;
+	}
+}
+
+@media only screen and
+	(max-width: 1100px),
+	(max-device-width: 1100px),
+	(orientation:portrait)
+{
+	#menuSlideshow
+	{
+		height: 375px;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 180px;
+  }
+
+	#footerPg
+	{
+    padding: 0px 8% 3%;
+	}
+}
+
+@media only screen and
+	(max-width: 1025px),
+	(max-device-width: 1025px),
+	(orientation:portrait)
+{
+	#menuSlideshow
+	{
+		height: 345px;
+	}
+
+	#homePg, #aboutPg
+	{
+		font-size:1.35em;
+	}
+
+	#menu
+	{
+    font-size: 1em;
+  }
+
+  #cafeSlide, #wineSlide
+	{
+    height: 165px;
+  }
+
+  #footerPg
+	{
+		background-position: 95% 40%;
+		background-size: 18%;
+	}
+}
+
+@media only screen and
+	(max-width: 970px),
+	(max-device-width: 970px),
+	(orientation:portrait)
+{
+	#aboutPg h1
+	{
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and
+	(max-width: 930px),
+	(max-device-width: 930px),
+	(orientation:portrait)
+{
+	#menuSlideshow
+	{
+		height: 310px;
+	}
+
+	#homePg, #aboutPg
+	{
+		font-size:1.27em;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 141px;
+  }
+
+  #aboutPg h1
+	{
+		font-size: 1.5em;
+	}
+
+  #aboutPg span
+	{
+		width: 96%;
+		display: inline-block;
+		font-size: 1.35em;
+	}
+
+  /*events pg*/
+  #post-18 .entry-content
+  {
+    padding-bottom: 2%;
+	}
+
+	#musicPg, #music
+	{
+    width: 95%;
+	}
+
+	#eventsPg
+	{
+    width: 90%;
+    float: none;
+    clear: both;
+  }
+
+	#mailList
+	{
+    width: 65%;
+    margin:0 auto;
+    float: none;
+    clear: both;
+  }
+
+	#bigcalendar1
+	{
+    width: 98%;
+    margin: 0 auto;
+    padding-top: 3%;
+	}
+
+	#footerPg
+	{
+    padding: 0px 1% 3%;
+	}
+}
+
+@media only screen and
+	(max-width: 800px),
+	(max-device-width: 800px),
+	(orientation:portrait)
+{
+	#menuSlideshow
+	{
+		height: 270px;
+	}
+
+	#post-183
+	{
+		background: url('../../uploads/2014/08/RvBanner1200_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+	}
+
+	#post-10
+	{
+		background: url('../../uploads/2014/08/homeBkgrnd800_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+		background-size:100% 100%;
+	}
+
+	#homePg
+	{
+		font-size:1.2em;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 116px;
+  }
+
+  #mailList
+	{
+    width: 90%;
+  }
+
+	/*press pg*/
+	#post-22 section table thead tr
+	{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	#post-22 section table td
+	{
+		float:left;
+		clear:both;
+		width:48%;
+		border: none;
+		border-bottom: 1px dotted rgb(160,160, 160);
+		position: relative;
+		padding-left: 50%;
+	}
+
+	#post-22 section table td:before
+	{
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	#post-22 td:first-child
+	{
+		width:97%;
+		padding-left:0;
+	}
+
+	#footerNav
+	{
+    font-size: 1.5em;
+	}
+
+	#footerPg #cafeHours, #footerPg #winebarHours
+	{
+		margin: 1% 2% 1% 1%;
+	}
+	#footerNav
+	{
+    margin-top: 4%;
+	}
+}
+
+@media only screen and
+	(max-width: 715px),
+	(max-device-width: 715px),
+	(orientation:portrait)
+{
+	#post-183
+	{
+		background: url('../../uploads/2014/08/RvBanner800_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+	}
+
+}
+
+@media only screen and
+	(max-width: 660px),
+	(max-device-width: 660px),
+	(orientation:portrait)
+{
+
+	.primary-navigation ul li a:link
+	{
+		display: block;
+	}
+
+	#menu-item-132
+	{
+	 margin-left:-12px;
+	}
+
+	#menuSlideshow
+	{
+		height: 230px;
+	}
+
+	#cafeSlide, #wineSlide
+	{
+    height: 109px;
+    width: 89%;
+  }
+
+	#footerPg #cafeHours, #footerPg #winebarHours,
+	#footerMap
+	{
+    margin: 1% 1% 1% 1%;
+    font-size:.9em;
+  }
+}
+@media only screen and
+	(max-width: 599px),
+	(max-device-width: 599px)
+{
+
+	html
+	{
+		overflow-x:scroll !important;
+	}
+
+	body
+	{
+		overflow-x:scroll !important;
+	}
+
+	#post-183
+	{
+		background: url('../../uploads/2014/08/RvBanner600_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+	}
+
+	#post-10
+	{
+		background: url('../../uploads/2014/08/homeBkgrnd800_2.jpg');
+		background-repeat: no-repeat;
+		background-position:50% 0;
+		background-size:100% 100%;
+	}
+
+	.primary-navigation
+	{
+		position: absolute;
+		width:600px;
+		margin-top: 0px !important;
+	}
+
+	.primary-navigation ul li a:link
+	{
+		padding: 6px 11px !important;
+	}
+
+	#hoursPhone
+	{
+		margin-top: 44px;
+	}
+
+	#menuSlideshow
+	{
+		height: 220px;
+	}
+}
